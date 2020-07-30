@@ -12,8 +12,8 @@ void irrverbs(IrrVerb* correct)
         printf("\nCannot open file IV.txt\n");
         exit(0);
     }
-    int score = 0, point, mas[200] = { 0 }, i, k, n = 40;
-    for (i = 0; i < n; i++) {
+    int score = 0, point, mas[200] = { 0 }, i, k, n = 40, j;
+    for (j = 0; j < n; j++) {
         point = 0;
         char str1[16], str2[16];
         k = rand_verb(mas);
@@ -36,7 +36,7 @@ void irrverbs(IrrVerb* correct)
         } else {
             printf("\n+\n\n");
         }
-        printf("****************************************(%d)\n\n", i + 1);
+        printf("****************************************(%d)\n\n", j + 1);
     }
     float result;
     result = (score / 40.0) * 100.0;
