@@ -1,0 +1,13 @@
+sudo: required
+git:
+  depth: 1
+language: C
+script: 
+  - cd src 
+  - bash ./src.sh  
+  - cd -
+  - cd test
+  - bash ./test.sh
+  - cd -
+  - git status
+  - make all test

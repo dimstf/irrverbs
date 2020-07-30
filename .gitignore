@@ -1,0 +1,9 @@
+# executable
+bin/irrverbs
+bin/test/test
+# .o files
+build/main.o
+build/irrverbs.o
+build/irrverbs2.o
+build/test/main.o
+build/test/test.o
